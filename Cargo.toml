@@ -1,0 +1,22 @@
+[package]
+name = "tink_rs"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+
+[build-dependencies]
+cmake = "0.1.54"
+
+[[example]]
+name = "aead"
+crate-type = ["bin"]
+test = true
+
+[[example]]
+name = "hybrid"
+crate-type = ["bin"]
+test = true
+
+[lib]
+crate-type = ["lib"]
